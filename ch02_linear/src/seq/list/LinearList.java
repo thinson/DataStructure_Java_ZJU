@@ -1,4 +1,4 @@
-package linear.list;
+package seq.list;
 
 public class LinearList {
     public int[] data;
