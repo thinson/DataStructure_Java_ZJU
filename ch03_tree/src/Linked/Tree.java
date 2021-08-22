@@ -191,7 +191,7 @@ public class Tree {
             tree.add_node(i, tree.root);
         }
         tree.retrival(tree.root);
-        tree.delete_node(7, tree.root);
+        tree.delete_node(6, tree.root);
         tree.retrival(tree.root);
     }
 }
