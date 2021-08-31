@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ch03_tree/ch03_tree.iml" filepath="$PROJECT_DIR$/ch03_tree/ch03_tree.iml" />
       <module fileurl="file://$PROJECT_DIR$/ch04_maxheap/ch04_maxheap.iml" filepath="$PROJECT_DIR$/ch04_maxheap/ch04_maxheap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch05_set/ch05_set.iml" filepath="$PROJECT_DIR$/ch05_set/ch05_set.iml" />
       <module fileurl="file://$PROJECT_DIR$/数据结构与算法zju.iml" filepath="$PROJECT_DIR$/数据结构与算法zju.iml" />
     </modules>
   </component>
