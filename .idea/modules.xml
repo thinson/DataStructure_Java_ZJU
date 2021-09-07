@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/ch04_maxheap/ch04_maxheap.iml" filepath="$PROJECT_DIR$/ch04_maxheap/ch04_maxheap.iml" />
       <module fileurl="file://$PROJECT_DIR$/ch05_set/ch05_set.iml" filepath="$PROJECT_DIR$/ch05_set/ch05_set.iml" />
       <module fileurl="file://$PROJECT_DIR$/ch06_graph/ch06_graph.iml" filepath="$PROJECT_DIR$/ch06_graph/ch06_graph.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch07_sort/ch07_sort.iml" filepath="$PROJECT_DIR$/ch07_sort/ch07_sort.iml" />
       <module fileurl="file://$PROJECT_DIR$/数据结构与算法zju.iml" filepath="$PROJECT_DIR$/数据结构与算法zju.iml" />
     </modules>
   </component>
