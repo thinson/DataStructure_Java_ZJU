@@ -21,7 +21,89 @@ public class Sort {
         }
     }
 
+    // 插入排序
+    // 待排数组和tmp数组不断比较
+    public void Insertion_sort(){
+        if(list.length == 0 ) return;
+        tmp_list[0] = list[0];
+        for(int i=1; i<length; i++){
+            for(int j=i-1; j>=0 ; j--){
+                if (list[i]>tmp_list[j]){
+                    tmp_list[j+1] = list[i];
+                    break;
+                }
+                else if (j==0) {
+                    tmp_list[j+1] = tmp_list[j];
+                    tmp_list[j] = list[i];
+                }
+                else {
+                   tmp_list[j+1] = tmp_list[j];
+                }
+            }
+        }
+        for(int i=0;i<length;i++){
+            list[i] = tmp_list[i];
+        }
+    }
+
     // 堆排序
+
+
+
+    // 快速排序
+    public void Fast_sort(int L, int R_End){
+        // 递归结束的条件
+        if(R_End <= L) return;
+        else{
+            // 选主元
+            int tmp;
+            int center = (L + R_End) / 2;
+            // 手动冒泡排序
+            if( list[center] < list[L]){
+                tmp = list[center];
+                list[center] = list[L];
+                list[L] = tmp;
+            }
+            if( list[center] > list[R_End] ){
+                tmp = list[center];
+                list[center] = list[R_End];
+                list[R_End] = tmp;
+            }
+            if( list[center] < list[L]){
+                tmp = list[center];
+                list[center] = list[L];
+                list[L] = tmp;
+            }
+
+            // center和R_End-1互换
+            tmp = list[center];
+            list[center] = list[R_End-1];
+            list[R_End-1] = tmp;
+
+            // 比主元小的放在左边，比主元大的放在右边
+            int i = L+1;
+            int j = R_End - 2;
+            while(true){
+                if(list[i] < list[R_End - 1]) i++;
+                if(list[j] > list[R_End - 1]) j--;
+                if(i<j){
+                    tmp = list[i];
+                    list[i] = list[j];
+                    list[j] = tmp;
+                }
+                else{
+                    tmp = list[i];
+                    list[i] = list[R_End-1];
+                    list[R_End-1] = tmp;
+                    break;
+                }
+            }
+
+            // 递归左边和右边
+            Fast_sort(L, i-1);
+            Fast_sort(i+1, R_End);
+        }
+    }
 
 
     // 归并排序
@@ -101,7 +183,9 @@ public class Sort {
         // sort1.Bubble_sort();
         // sort1.Print();
         // sort1.Merge(0,2,3);
-        sort1.Merge_sort2(0, sort1.list.length-1);
+        // sort1.Merge_sort2(0, sort1.list.length-1);
+        // sort1.Insertion_sort();
+        sort1.Fast_sort(0, sort1.list.length-1);
         sort1.Print();
     }
 }
